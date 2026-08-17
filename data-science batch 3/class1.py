@@ -61,10 +61,39 @@
 # addy = "barnawa is a place"
 # print(addy.split(" "))
 
-my_mail= " int@yahoo.com  "
-print(my_mail[0:4])
+# my_mail= " int@yahoo.com  "
+# print(my_mail[0:4])
 # splitter = my_mail.split("@")
 # username = splitter[0]
 # domain_name = splitter[1]
 # print("Your username is ",username[0])
 # print("Your domain is ",domain_name)
+
+# String interpolation
+# f_name = "Isaac"
+# l_name = "Newton"
+
+# print(f"My name is {f_name} and my last name is {l_name}")
+
+# # Formatting Numbers
+# price = 19.9999
+# print(type(price))
+# converted_price = f"price:.4f"
+# print(type(converted_price)) # Price: $20.00
+
+# my_data = "Python"
+# print(my_data[::-1])
+
+favorites = [2, 4, "Mustapha", ["yam", "egg"], True, [False, None]]
+protein = favorites[3][1]
+print(protein)
+
+# range(start, stop, step)
+numbers = list(range(1, 20, 2))
+square_numbers = []
+for number in numbers:
+    # do something
+    number **= 2
+    square_numbers.append(number)
+# square_numbers = [number ** 2 for number in numbers]
+print(square_numbers)
