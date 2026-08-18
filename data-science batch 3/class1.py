@@ -84,16 +84,53 @@
 # my_data = "Python"
 # print(my_data[::-1])
 
-favorites = [2, 4, "Mustapha", ["yam", "egg"], True, [False, None]]
-protein = favorites[3][1]
-print(protein)
+# favorites = [2, 4, "Mustapha", ["yam", "egg"], True, [False, None]]
+# protein = favorites[3][1]
+# print(protein)
 
-# range(start, stop, step)
-numbers = list(range(1, 20, 2))
-square_numbers = []
-for number in numbers:
-    # do something
-    number **= 2
-    square_numbers.append(number)
-# square_numbers = [number ** 2 for number in numbers]
-print(square_numbers)
+# # range(start, stop, step)
+# numbers = list(range(1, 20, 2))
+# square_numbers = []
+# for number in numbers:
+#     # do something
+#     number **= 2
+#     square_numbers.append(number)
+# # square_numbers = [number ** 2 for number in numbers]
+# print(square_numbers)
+
+# age = 19
+# isLicensed = True
+
+# if age >= 18 and isLicensed == True:
+# #     print("Allowed to drive")
+# # else:
+# #     print("Sorry not allowed to drive")
+
+# allowed_roles = ["admin", "staff", "user"]
+# user_role = "staff"
+
+# if user_role in allowed_roles:
+#     print("Login successful")
+#     if user_role == "admin":
+#         print("Welcome to Admin dashboard")
+#     elif user_role == "staff":
+#         print("Welcome to Staff Dashboard")
+#     elif user_role == "user":
+#         print("Welcome to User Dashboard")
+#     else:
+#         print("Go back to Login")
+# else:
+#     print("Unauthorized")
+
+# LOOPS - for / while
+# FOR
+# BU$BE$$Y
+designer = "Burberry"
+# for char in designer:
+#     if char == "r":
+#         char = "$"
+#     char = char.upper()
+#     print(char)
+
+# may = "r"
+# print("R" == may)
