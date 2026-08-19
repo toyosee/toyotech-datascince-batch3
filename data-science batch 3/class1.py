@@ -125,8 +125,8 @@
 # LOOPS - for / while
 # FOR
 # BU$BE$$Y
-designer = "Burberry"
-# for char in designer:
+# designer = "Burberry"
+# # for char in designer:
 #     if char == "r":
 #         char = "$"
 #     char = char.upper()
@@ -134,3 +134,56 @@ designer = "Burberry"
 
 # may = "r"
 # print("R" == may)
+
+# cole = list(range(1,7))
+# for num in cole:
+#     if num == 4:
+#         continue
+#     print(num)
+# starter = 1
+
+# while starter <= len(cole):
+#     print(starter)
+#     starter += 1
+
+# Functions
+# Predefined - user defined - lambda
+
+# print(), range(), len()
+
+# user defined
+# def myGuy(name, hour):
+#     print(f"Good {name.upper()} {hour.title()}")
+    
+# name = "Elijah"
+# time = "Afternoon"
+# myGuy(time, name)
+
+# def incrementAge(*args):
+#     return args
+
+# age = 73
+# new_Age = incrementAge(3,4,5,6,7,8,9,5)
+# print(new_Age)
+
+def squareIt(num):
+    num **= 2
+    return num
+
+
+print((lambda base,height: 0.5 * base * height)(4,3))
+
+def performOperations(operator, val1, val2):
+    result = None
+    if operator == "+":
+        result = val1 + val2
+    elif operator == "-":
+        result = val1 - val2
+    elif operator == "tri":
+        result = 0.5 * val1 * val2
+    else:
+        result = "Something went wrong"
+    return result
+
+
+print(performOperations("tri",5,5))
