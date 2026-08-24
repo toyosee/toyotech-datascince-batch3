@@ -162,28 +162,66 @@
 # def incrementAge(*args):
 #     return args
 
-# age = 73
-# new_Age = incrementAge(3,4,5,6,7,8,9,5)
-# print(new_Age)
+# # age = 73
+# # new_Age = incrementAge(3,4,5,6,7,8,9,5)
+# # print(new_Age)
 
-def squareIt(num):
-    num **= 2
-    return num
-
-
-print((lambda base,height: 0.5 * base * height)(4,3))
-
-def performOperations(operator, val1, val2):
-    result = None
-    if operator == "+":
-        result = val1 + val2
-    elif operator == "-":
-        result = val1 - val2
-    elif operator == "tri":
-        result = 0.5 * val1 * val2
-    else:
-        result = "Something went wrong"
-    return result
+# def squareIt(num):
+#     num **= 2
+#     return num
 
 
-print(performOperations("tri",5,5))
+# print((lambda base,height: 0.5 * base * height)(4,3))
+
+# def performOperations(operator, val1, val2):
+#     result = None
+#     if operator == "+":
+#         result = val1 + val2
+#     elif operator == "-":
+#         result = val1 - val2
+#     elif operator == "tri":
+#         result = 0.5 * val1 * val2
+#     else:
+#         result = "Something went wrong"
+#     return result
+
+
+# print(performOperations("tri",5,5))
+
+# # Enum - enumerate()
+# items = ["",6,True]
+# definer = enumerate(items)
+# for something in definer:
+#     print(something)
+    
+# height = [4.5, 6.7, 3.2]
+# name = ["Simon", "Joseph", "Zach"]
+# combo = zip(height,name)
+# print(list(combo))
+
+# # *args, **kwargs
+
+# def addiIt(*args):
+#     return type(args)
+
+# # print(addiIt(3,4,5,6,7,8,9))
+
+# def biggerArgs(**kwargs):
+#     all_items = kwargs.keys()
+#     return all_items
+
+# print(biggerArgs(name="Theophilus", address ="", age=67))
+
+# Aplication of args and kwargs
+# Creating flexible configuration functions
+def configure(**kwargs):
+    config = {
+    'debug': False,
+    'timeout': 30,
+    'max_retries': 3
+    }
+    config.update(kwargs)
+    return config
+
+settings = configure(debug=True, timeout=60, custom_option="value", url="https://something.com ")
+print(settings.get("url"))
