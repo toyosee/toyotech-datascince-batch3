@@ -1,0 +1,4 @@
+Write a module script that will take the radius of a planet and 
+return the name of the planet and the surface area.
+- If a wrong radius is entered, it will return the area of a sphere
+- If a non number stype is entered, it will return invalid entry

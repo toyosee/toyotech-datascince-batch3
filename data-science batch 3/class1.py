@@ -202,26 +202,49 @@
 # # *args, **kwargs
 
 # def addiIt(*args):
-#     return type(args)
+# #     return type(args)
 
-# # print(addiIt(3,4,5,6,7,8,9))
+# # # print(addiIt(3,4,5,6,7,8,9))
 
-# def biggerArgs(**kwargs):
-#     all_items = kwargs.keys()
-#     return all_items
+# # def biggerArgs(**kwargs):
+# #     all_items = kwargs.keys()
+# #     return all_items
 
-# print(biggerArgs(name="Theophilus", address ="", age=67))
+# # print(biggerArgs(name="Theophilus", address ="", age=67))
 
-# Aplication of args and kwargs
-# Creating flexible configuration functions
-def configure(**kwargs):
-    config = {
-    'debug': False,
-    'timeout': 30,
-    'max_retries': 3
-    }
-    config.update(kwargs)
-    return config
+# # Aplication of args and kwargs
+# # Creating flexible configuration functions
+# def configure(**kwargs):
+#     config = {
+#     'debug': False,
+#     'timeout': 30,
+#     'max_retries': 3
+#     }
+#     config.update(kwargs)
+#     return config
 
-settings = configure(debug=True, timeout=60, custom_option="value", url="https://something.com ")
-print(settings.get("url"))
+# settings = configure(debug=True, timeout=60, custom_option="value", url="https://something.com ")
+# print(settings.get("url"))
+
+# # Dictionary
+# collection = {
+#     "names": ["Ali", "Simbi", "Musa"],
+#     "ages": [44,56,32],
+#     "full_info": {
+#         "payment_status":True,
+#         "accounts": ["3344567", "65123543"]
+#     }
+# }
+
+# collection["address"] = []
+# print(collection.items())
+
+from helper import age, food_items, greeting
+
+# print(age)
+
+# for food in food_items:
+#     print(food.upper())
+
+print(greeting("Moses"))
+# Stopped at pg 54
