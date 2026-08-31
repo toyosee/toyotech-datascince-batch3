@@ -248,3 +248,6 @@ from helper import age, food_items, greeting
 
 print(greeting("Moses"))
 # Stopped at pg 54
+
+# File Handling and Operations
+# Check repository for material
