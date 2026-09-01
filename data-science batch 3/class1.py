@@ -246,8 +246,48 @@ from helper import age, food_items, greeting
 # for food in food_items:
 #     print(food.upper())
 
-print(greeting("Moses"))
+# print(greeting("Moses"))
 # Stopped at pg 54
 
 # File Handling and Operations
 # Check repository for material
+# open(), read(), write(), close()
+
+file_path = "test.txt"
+message = "Good morning over here"
+message2 = " I am here"
+
+# Write a Python script that will save an email address
+# Read the email information from the script and seperate
+# It into username and domain name and print it out
+# Example : mike@gmail.com -> username: mike, domain: gmail.com
+# Steps - plan
+
+# w, a, x, r
+new_file = open(file_path, "r")
+# new_file.write(message2)
+# receiver = new_file.read(5)
+# print(receiver)
+
+# new_file.close()
+
+# Function definition - Parameter
+# def readIt():
+#     with open("test.txt", "r") as file:
+#         return file.read()
+
+# # Function call - argument  
+# print(readIt())
+import os
+
+def fileCreator(file_name):
+    if not os.path.exists(file_name):
+        with open(file_name, "x") as file:
+            print(f"{file_name} has been created successfully")
+    else:
+        print(f"{file_name} already exists")
+
+fileCreator("new_file2.csv")
+
+# os.remove("new_file2.csv")
+os.mkdir("our_folder")
