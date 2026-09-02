@@ -239,7 +239,7 @@
 # collection["address"] = []
 # print(collection.items())
 
-from helper import age, food_items, greeting
+# from helper import age, food_items, greeting
 
 # print(age)
 
@@ -253,9 +253,9 @@ from helper import age, food_items, greeting
 # Check repository for material
 # open(), read(), write(), close()
 
-file_path = "test.txt"
-message = "Good morning over here"
-message2 = " I am here"
+# file_path = "test.txt"
+# message = "Good morning over here"
+# message2 = " I am here"
 
 # Write a Python script that will save an email address
 # Read the email information from the script and seperate
@@ -264,7 +264,7 @@ message2 = " I am here"
 # Steps - plan
 
 # w, a, x, r
-new_file = open(file_path, "r")
+# new_file = open(file_path, "r")
 # new_file.write(message2)
 # receiver = new_file.read(5)
 # print(receiver)
@@ -272,22 +272,51 @@ new_file = open(file_path, "r")
 # new_file.close()
 
 # Function definition - Parameter
-# def readIt():
-#     with open("test.txt", "r") as file:
-#         return file.read()
+# # def readIt():
+# #     with open("test.txt", "r") as file:
+# #         return file.read()
 
-# # Function call - argument  
-# print(readIt())
-import os
+# # # Function call - argument
+# # print(readIt())
+# import os
 
-def fileCreator(file_name):
-    if not os.path.exists(file_name):
-        with open(file_name, "x") as file:
-            print(f"{file_name} has been created successfully")
-    else:
-        print(f"{file_name} already exists")
+# def fileCreator(file_name):
+#     if not os.path.exists(file_name):
+#         with open(file_name, "x") as file:
+#             print(f"{file_name} has been created successfully")
+#     else:
+#         print(f"{file_name} already exists")
 
-fileCreator("new_file2.csv")
+# fileCreator("new_file2.csv")
 
-# os.remove("new_file2.csv")
-os.mkdir("our_folder")
+# # os.remove("new_file2.csv")
+# os.mkdir("our_folder")
+
+# from utils import api_health, current_date, settings
+
+# print(current_date)
+
+# Exception Handling
+# try:
+      # something
+# except Exception as e:
+        # something
+# finally:
+      # something
+      
+num1 = 5
+num2 = 0
+
+# result = num1 // num2
+# print(result)
+
+try:
+    result = num1 / (num2 + num3)
+except (ZeroDivisionError, NameError) as e:
+    print(f"Error : {e}")
+# except NameError:
+#     print("Abi you forget something")
+finally:
+    print("Something sha work")
+    
+# Stopped at 114
