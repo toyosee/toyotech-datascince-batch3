@@ -304,19 +304,51 @@
 # finally:
       # something
       
-num1 = 5
-num2 = 0
+# num1 = 5
+# num2 = 0
 
-# result = num1 // num2
-# print(result)
+# # result = num1 // num2
+# # print(result)
 
-try:
-    result = num1 / (num2 + num3)
-except (ZeroDivisionError, NameError) as e:
-    print(f"Error : {e}")
-# except NameError:
-#     print("Abi you forget something")
-finally:
-    print("Something sha work")
+# try:
+#     result = num1 / (num2 + num3)
+# except (ZeroDivisionError, NameError) as e:
+#     print(f"Error : {e}")
+# # except NameError:
+# #     print("Abi you forget something")
+# finally:
+#     print("Something sha work")
     
 # Stopped at 114
+
+# Virtual Environments
+
+# - creating  python -m venv .venv
+# activating  .venv\Scripts\activate
+# deactivate - deactivate
+# pip freeze
+# pip freeze > requirements.txt
+# pip install -r requirements.txt
+# pip list
+
+# NUMERICAL ANALYSIS
+# NUMPY
+# pip install numpy
+
+import numpy as np
+
+# ages = [22, 34, 56, 78, 90, 12, 45, 67, 89, 23]
+# heights = [5.6, 6.7, 4.5, 5.9, 6.1, 5.2, 5.8, 6.3, 5.4, 5.7]
+
+# converted_ages = np.array([ages, heights])
+# print(converted_ages[1][-1])
+
+# Age of customer : age
+# Height of customer : height
+
+dimension = (3,4)
+array_2d = np.zeros(dimension)
+# print(array_2d)
+
+given_sets = np.arange(1, 21).reshape(4,5)
+print(given_sets.dtype)
