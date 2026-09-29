@@ -40,7 +40,26 @@ ON c.customer_id = o.customer_id
 ORDER BY o.amount DESC;
 """
 
+# Aggregation of customers and their orders
+big_query = """
+SELECT c.customer_id, 
+c.age,
+c.signup_channel,
+COUNT(o.order_id) AS number_of_orders,
+SUM(o.amount) AS total_spent,
+AVG(o.amount) AS avg_order_value,
+MAX(o.order_date) AS last_order_date,
+JULIANDAY('now') - JULIANDAY(MAX(o.order_date)) AS days_since_last_order 
+FROM customers c 
+LEFT JOIN orders o 
+ON c.customer_id = o.customer_id 
+GROUP BY c.customer_id;
+
+"""
+
 # all_customers = pd.read_sql_query(query, conn)
 last_5_orders = pd.read_sql_query(query, conn)
 customers_and_orders = pd.read_sql_query(query, conn)
-print(customers_and_orders.head())
+aggregated_customers = pd.read_sql_query(big_query, conn)
+# print(customers_and_orders.head())
+print(aggregated_customers.head())
